@@ -183,16 +183,8 @@ export function isValidBucketName(bucket) {
   if (bucket.indexOf('..') > -1) {
     return false
   }
-  // bucket cannot have ip address style.
-  if (bucket.match(/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/)) {
-    return false
-  }
-  // bucket should begin with alphabet/number and end with alphabet/number,
-  // with alphabet/number/.- in the middle.
-  if (bucket.match(/^[a-z0-9][a-z0-9.-]+[a-z0-9]$/)) {
-    return true
-  }
-  return false
+  
+  return true
 }
 
 // check if objectName is a valid object name
