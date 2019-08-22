@@ -1,13 +1,12 @@
 {
-  "name": "minio",
-  "version": "7.0.13",
-  "description": "S3 Compatible Cloud Storage client",
+  "name": "minio-fork-google-storage",
+  "version": "7.0.15",
+  "description": "S3 Compatible Cloud Storage client for google buckets' name fix",
   "main": "./dist/main/minio.js",
   "scripts": {
     "compile": "gulp compile",
     "test": "gulp test",
     "lint": "gulp lint",
-    "prepublishOnly": "gulp test",
     "functional": "gulp functionalTest",
     "browserify": "gulp browserify",
     "prepare": "npm run compile"
